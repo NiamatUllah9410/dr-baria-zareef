@@ -56,7 +56,7 @@ body {
 
 /* About Section */
 .about-section {
-    padding: 120px 24px 80px 24px;
+    padding: 70px 24px 40px 24px;
     background-color: #f9f9f9;
     font-family: 'Segoe UI', Tahoma, sans-serif;
 }
@@ -294,7 +294,7 @@ body {
 
 /* why choose 1 Section Styling */
 .why-choose-section {
-    padding: 80px 24px;
+    padding: 40px 24px;
     background: #f9f9f9;
     font-family: 'Segoe UI', Tahoma, sans-serif;
     text-align: center;
@@ -312,7 +312,6 @@ body {
     margin: 0 auto 50px;
     font-size: 1.1rem;
     color: #555;
-    line-height: 1.6;
 }
 
 .why-choose-grid {
@@ -352,35 +351,10 @@ body {
     color: #555;
     line-height: 1.6;
 }
-
-/* why choose section 2 */
-.why-choose-simple {
-    padding: 60px 24px;
-    width: 100%;
-    max-width: 1360px;
-    margin:auto ;
-    background: #fff;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-}
-
-.why-choose-simple .container {
-    max-width: 900px;
+.why-choose-section p{
+    max-width: 800px;
     margin: 0 auto;
-}
-
-.why-choose-simple h2 {
-    font-size: 2.5rem;
-    color: #075791;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.why-choose-simple p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #333;
-    text-align: justify;
+     color: #555;
 }
 
 /* Testimonials Section */
@@ -504,22 +478,58 @@ body {
 @media (max-width: 600px) {
     .section-title {
         font-size: 1.8rem;
+         margin-bottom: 0px;
     }
     .main-header {
     padding: 30px 0;
 }
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 14px;
+}
+.why-choose-section {
+    padding: 10px 24px;
+}
+
+.why-choose-simple h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+.testimonials {
+  padding: 20px 24px;
+}
+.testimonials h2 {
+  font-size: 2rem;
+}
     .testimonial-card {
         padding: 20px 15px;
     }
-    .section-container, .about-container, .certificates-section, .why-choose-section, .why-choose-simple, .container {
-        padding-left: 4px;
-        padding-right: 4px;
+    .section-container, .about-container, .certificates-section, .why-choose-section, .container {
+        padding-left: 6px;
+        padding-right: 6px;
     }
+    .why-choose-section h2 {
+        margin-bottom: 16px;
+    }
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+    animation: fade-in-down 1s ease-in-out;
+}
+    
 }
 @media (max-width: 480px) {
     .main-header h1 {
         font-size: 1rem;
     }
+    .about-section {
+    padding: 10px 24px 10px 24px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+.certificates-section {
+    padding: 40px 24px
 }
 
 /* Floating Call Button */
@@ -544,4 +554,5 @@ body {
 .call-btn:hover {
   background: #05456f;
   transform: scale(1.08);
+}
 }
