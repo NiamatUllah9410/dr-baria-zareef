@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+:root {
+  --primary-blue: #075791;
+  --accent-green: #85C441;
+  --accent-green-dark: #6ea82e;
+}
 .testimonials{position: relative;background-repeat: no-repeat;background-size: cover;padding:50px 0;font-family:'Poppins', sans-serif}
 .testimonials::before{content:'';position: absolute;right:0;left:0;top:0;bottom:0;background: rgba(9, 30, 62, .85);}
 .testimonials .title {text-align: center;margin-bottom: 50px;position: relative;padding: 20px 0;max-width: 600px;margin: 0 auto;}
@@ -33,7 +38,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color:#075791;
+    background-color: var(--primary-blue);
     color: #fff;
     padding: 40px 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -78,7 +83,7 @@ body {
 
 .about-text h2 {
     font-size: 2.5rem;
-    color: #075791;
+    color: var(--primary-blue);
     margin-bottom: 20px;
 }
 
@@ -92,7 +97,7 @@ body {
 /* Call-to-Action Button */
 .btn-primary {
     display: inline-block;
-    background: #075791;
+    background: var(--accent-green);
     color: #fff;
     text-decoration: none;
     padding: 12px 25px;
@@ -102,7 +107,7 @@ body {
 }
 
 .btn-primary:hover {
-    background: #05456f;
+    background: var(--accent-green-dark);
     transform: scale(1.05);
 }
 
@@ -165,7 +170,7 @@ body {
 
 .section-title {
     font-size: 2.5rem;
-    color: #075791;
+    color: var(--primary-blue);
     margin-bottom: 10px;
     font-weight: bold;
     animation: fade-in-down 1s ease-in-out;
@@ -196,7 +201,7 @@ body {
 
 .section-title {
     font-size: 2.5rem;
-    color: #075791;
+    color: var(--primary-blue);
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -302,7 +307,7 @@ body {
 
 .section-title {
     font-size: 3rem;
-    color: #075791;
+    color: var(--primary-blue);
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -336,7 +341,7 @@ body {
 
 .choose-card .icon {
     font-size: 2.5rem;
-    color: #075791;
+    color: var(--accent-green);
     margin-bottom: 15px;
 }
 
@@ -377,7 +382,7 @@ body {
   text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
-  color: #075791;
+  color: var(--primary-blue);
   margin-bottom: 50px;
 }
 
@@ -406,7 +411,7 @@ body {
 
 .stars {
   font-size: 1.2rem;
-  color: #075791; 
+  color: var(--accent-green); 
   margin-bottom: 15px;
 }
 
@@ -531,13 +536,13 @@ body {
 .certificates-section {
     padding: 40px 24px
 }
-
+}
 /* Floating Call Button */
 .call-btn {
   position: fixed;
-  right: 24px;
+  left: 24px;
   bottom: 24px;
-  background: #075791;
+  background: var(--primary-blue);
   color: #fff;
   border-radius: 50%;
   width: 56px;
@@ -552,7 +557,28 @@ body {
   text-decoration: none;
 }
 .call-btn:hover {
-  background: #05456f;
+  background: var(--accent-green-dark);
   transform: scale(1.08);
 }
+.whatsapp-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  background: var(--accent-green);
+  color: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(9,30,62,0.15);
+  font-size: 2rem;
+  z-index: 9999;
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+.whatsapp-btn:hover {
+  background: var(--primary-blue);
+  transform: scale(1.08);
 }
